@@ -1,0 +1,31 @@
+/* updateProfile.css */
+
+/* Your existing styles */
+
+.profile-container {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  .profile-container label {
+    width: 100px; /* Adjust the width as needed */
+    margin-right: 10px;
+  }
+  
+  .profile-container input {
+    flex: 1;
+    max-width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 24px 26px;
+  }
+  
+  /* Add any additional styles as needed */

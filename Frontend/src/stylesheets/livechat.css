@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+  }
+  
+  .textInputWrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; /* Increase margin for spacing */
+    --accent-color: #a3e583;
+  }
+  
+  #liveChatTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #B563FF;
+    background-image: linear-gradient(to top right, #B563FF, #B563FF);
+    padding: 15px; /* Increase padding for a larger header */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .textInputWrapper:before {
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  }
+  
+  .textInputWrapper:before,
+  .textInputWrapper:after {
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+    bottom: -1px;
+    z-index: 4;
+    width: 100%;
+  }
+  
+  .textInputWrapper:focus-within:before {
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+  .textInputWrapper:before {
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  }
+  
+  .textInputWrapper:focus-within:before {
+    border-bottom: 1px solid var(--accent-color);
+    transform: scaleX(1);
+  }
+  
+  .textInputWrapper:focus-within:after {
+    border-bottom: 2px solid var(--accent-color);
+    transform: scaleX(1);
+  }
+  
+  .textInputWrapper:after {
+    content: "";
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    will-change: transform;
+    border-bottom: 2px solid var(--accent-color);
+    border-bottom-color: var(--accent-color);
+  }
+  
+  .textInputWrapper .textInput {
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+    max-height: 100px; /* Increase max-height for a larger chatbox */
+    background-color: #252525;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 200ms;
+    transition-property: background-color;
+    color: #e8e8e8;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px; /* Increase padding for a larger chatbox */
+    width: 100%;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+  
+  .textInputWrapper .textInput:focus,
+  .textInputWrapper .textInput:active {
+    outline: none;
+  }
+  
+  .textInputWrapper:focus-within .textInput,
+  .textInputWrapper .textInput:focus,
+  .textInputWrapper .textInput:active {
+    background-color: #353535;
+  }
+  
+  .textInputWrapper:focus-within .textInput::placeholder {
+    opacity: 0;
+  }
+  
+  /* Updated styles for label and button */
+  
+  .textInputWrapper label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .customButton {
+    max-width: 320px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem 9rem;
+    background-color: #6c5ce7;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 5px;
+    gap: 0.75rem;
+    box-shadow: 0 5px 0px 0px #a29bfe;
+    border: none;
+    transition: all ease 0.1s;
+  }
+  
+  .customButton span {
+    background-color: rgb(3 155 229);
+    display: grid;
+    position: absolute;
+    right: 0;
+    place-items: center;
+    width: 8rem;
+    height: 100%;
+  }
+  
+  .customButton span svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .customButton:hover {
+    box-shadow: 0 4px 30px rgba(4, 175, 255, 0.1), 0 2px 30px rgba(11, 158, 255, 0.06);
+  }
+  
+  .customButton:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 0 #a29bfe;
+  }

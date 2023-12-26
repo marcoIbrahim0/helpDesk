@@ -1,0 +1,61 @@
+/* Agent.css */
+
+/* Include styles from Admin.css for common styles */
+
+/* Styles for the content section */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.5s;
+  }
+  
+  /* Styles for the sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #323030;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    z-index: 2;
+  }
+  
+  .sidebar a {
+    padding: 60px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Remove the close button */
+  .sidebar .close-btn {
+    display: none;
+  }
+  
+  /* Style for the "Open Sidebar" button */
+  .open-btn {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    font-size: 18px;
+    z-index: 3;
+    cursor: pointer;
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 16px !important;
+    margin-top: 5px;
+  }
+  

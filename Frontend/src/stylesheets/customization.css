@@ -1,0 +1,73 @@
+/* Styles for the sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #323030;
+  overflow-x: hidden;
+  transition: width 0.5s; /* Add transition for sidebar width */
+  z-index: 2; /* Ensure the sidebar is above other elements */
+}
+
+.sidebar a {
+  padding: 60px 8px 8px 32px; /* Adjust the top padding to lower the components further */
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  z-index: 1; /* Ensure sidebar links are below the button */
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Remove the close button */
+.sidebar .close-btn {
+  display: none;
+}
+
+/* Styles for the content section */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 50px; /* Adjust the margin as needed (changed to pixels) */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: margin-left 0.5s;
+  margin-left: 50%; /* Center the content horizontally (adjusted to pixels) */
+  transform: translateX(3%); /* Center the content horizontally */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+}

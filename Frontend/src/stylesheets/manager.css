@@ -1,0 +1,33 @@
+/* Manager.css */
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ab20fd;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #ffe600;
+  }
+  
+  .main-content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+  

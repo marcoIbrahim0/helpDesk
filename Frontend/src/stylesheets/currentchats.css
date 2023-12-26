@@ -1,0 +1,35 @@
+.agent-chat-container {
+    /* Your existing styles */
+  
+    .chat-box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* Adjust the gap between boxes as needed */
+    }
+  
+    .chat-box {
+        /* Your existing styles for each chat box */
+        width: 200px; /* Set the width of each box as needed */
+        background-color: #fff; /* Set background color */
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 0;
+        border-radius: 8px; /* Add border-radius for rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for a subtle shadow effect */
+      }
+  
+    h3 {
+      font-size: 12px; /* Adjust the font size for the Chat ID */
+      margin-bottom: 8px; /* Add margin for better spacing */
+    }
+    button {
+        background-color: #B563FF;
+        color: #000000; /* Set text color to contrast with the background */
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+    
+      /* Style the chat button on hover if needed */
+      
+  }

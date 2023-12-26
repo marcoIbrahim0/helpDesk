@@ -1,0 +1,55 @@
+/* knowledge.css */
+
+.form-container {
+  padding: 16px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.searchInput {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ab20fd;
+  margin-right: 8px;
+}
+
+.searchButton {
+  background-color: #ab20fd;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 16px;
+}
+
+.main-content h1 {
+  color: #ab20fd;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 16px;
+}
+
+ul li h3 {
+  color: #ab20fd;
+  margin-bottom: 8px;
+}
+
+ul li p {
+  color: #333;
+}
+
+/* Add your existing styles below this line */

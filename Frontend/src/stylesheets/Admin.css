@@ -1,0 +1,86 @@
+/* Admin.css */
+
+/* Styles for the AdminNavbar component */
+.navbar {
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* Text color */
+}
+
+.navbar-nav {
+  margin-right: auto; /* Move the navbar items to the right */
+}
+
+.nav-item {
+  margin-right: 20px; /* Increase space between navbar items */
+}
+
+.nav-link {
+  color: #ffffff !important; /* Set text color for nav links */
+}
+
+/* Add padding to the top of the body to prevent content from being covered by the fixed navbar */
+body {
+  display: flex;
+  flex-direction: row; /* Set the main axis to row */
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Styles for the content section */
+.main-content {
+  flex: 1; /* Use remaining space in the container */
+  padding: 20px; /* Add padding to the content */
+  background-color: #0780fa; /* Light background color for content */
+  border-radius: 8px; /* Add rounded corners to the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: margin-left 0.5s; /* Add transition for content shift */
+}
+
+/* Styles for the sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color:#323030;
+  overflow-x: hidden;
+  transition: width 0.5s; /* Add transition for sidebar width */
+  z-index: 2; /* Ensure the sidebar is above other elements */
+}
+
+.sidebar a {
+  padding: 60px 8px 8px 32px; /* Adjust the top padding to lower the components further */
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  z-index: 1; /* Ensure sidebar links are below the button */
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+/* Remove the close button */
+.sidebar .close-btn {
+  display: none;
+}
+
+/* Style for the "Open Sidebar" button */
+/* Style for the "Open Sidebar" button */
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  font-size: 18px;
+  z-index: 3;
+  cursor: pointer;
+  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 16px !important;
+  margin-top: 5px;
+}
